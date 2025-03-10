@@ -427,28 +427,28 @@ optimal site performance.`,
 // Testimonies
 export const testimonies :object = [
   {
-    client: "Biamarachi Elekwachi",
+    client: "Customer Name",
     title: "Thanks for the service",
     review: "nice website",
     role: "CEO at MySite",
     image: "/globe.svg",
   },
   {
-    client: "Biamarachi Elekwachi",
+    client: "Customer Name",
     title: "Thanks for the service",
     review: "nice website",
     role: "CEO at MySite",
     image: "/globe.svg",
   },
   {
-    client: "Biamarachi Elekwachi",
+    client: "Customer Name",
     title: "Thanks for the service",
     review: "nice website",
     role: "CEO at MySite",
     image: "/globe.svg",
   },
   {
-    client: "Biamarachi Elekwachi",
+    client: "Customer Name",
     title: "Thanks for the service",
     review: "nice website",
     role: "CEO at MySite",
