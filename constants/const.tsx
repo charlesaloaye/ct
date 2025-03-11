@@ -54,67 +54,71 @@ export const menu  = [
 export const skills  = [
   {
     title: "ExpressJs",
-    now: 90,
-    color: "bg-primary",
+    now: 95,
+    color: "bg-black",
     min: 90,
-    max: 100,
-  },
-  {
-    title: "NextJs",
-    now: 80,
-    color: "bg-primary",
-    min: 80,
     max: 100,
   },
   {
     title: "PHP",
     now: 95,
-    color: "bg-primary",
+    color: "bg-black",
     min: 80,
     max: 100,
   },
   {
-    title: "Postgress",
-    now: 78,
-    color: "bg-primary",
-    min: 80,
-    max: 100,
-  },
-  {
-    title: "MogoDB",
-    now: 75,
-    color: "bg-primary",
+    title: "MongoDB",
+    now: 95,
+    color: "bg-black",
     min: 80,
     max: 100,
   },
   {
     title: "MySQL",
-    now: 96,
-    color: "bg-primary",
-    min: 80,
-    max: 100,
-  },
-  {
-    title: "ReactJs",
-    now: 85,
-    color: "bg-primary",
-    min: 80,
-    max: 100,
-  },
-  {
-    title: "Tailwind",
-    now: 70,
-    color: "bg-primary",
+    now: 95,
+    color: "bg-black",
     min: 80,
     max: 100,
   },
   {
     title: "Bootstrap",
-    now: 94,
-    color: "bg-primary",
+    now: 95,
+    color: "bg-black",
     min: 80,
     max: 100,
   },
+  {
+    title: "ReactJs",
+    now: 90,
+    color: "bg-black",
+    min: 80,
+    max: 100,
+  },
+
+  {
+    title: "NextJs",
+    now: 90,
+    color: "bg-black",
+    min: 90,
+    max: 100,
+  },
+  
+  {
+    title: "PostgresSQL",
+    now: 90,
+    color: "bg-black",
+    min: 80,
+    max: 100,
+  },
+ 
+  {
+    title: "Tailwind",
+    now: 85,
+    color: "bg-black",
+    min: 80,
+    max: 100,
+  },
+ 
 ];
 // Services
 export const services  = [
@@ -178,17 +182,17 @@ export const contacts  = [
   {
     cta: "Call Me",
     icon: <BiPhoneCall />,
-    description: "Book a consultation today",
+    description: "Book a consultation today <br/> <strong>081372037803</strong>",
   },
   {
     cta: "Send Email",
     icon: <BiMailSend />,
-    description: "Send mail today",
+    description: "Send mail today <br/> <strong>charlestechy0@gmail.com</strong>",
   },
   {
     cta: "Address",
     icon: <BiCurrentLocation />,
-    description: "127.0.0.1",
+    description: "<br/> <strong>127.0.0.1</strong>",
   },
 ];
 // Social Media

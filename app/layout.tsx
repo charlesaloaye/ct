@@ -1,13 +1,10 @@
-// 'use client'
 import type { Metadata } from "next";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Script from "next/script";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
-// import "../public/js/custom.js";
-// import "../public/js/dark-light.js";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: process.env.NEXT_PUBLIC_APP_NAME || "Charles Aloaye Sedenu",
@@ -21,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <Analytics/>
       <body className={``}>
         <Header />
         <main className='wrapper'>{children}</main>
@@ -28,23 +26,9 @@ export default function RootLayout({
 
         <Script
           src='https://code.jquery.com/jquery-3.6.0.min.js'
-          strategy='beforeInteractive'
         />
-        <Script
-          src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'
-          strategy='beforeInteractive'
-        />
-        <Script
-          src='https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js'
-          strategy='beforeInteractive'
-        />
-        <Script
-          src='https://cdnjs.cloudflare.com/ajax/libs/ScrollIt/1.0.3/scrollIt.min.js'
-          strategy='beforeInteractive'
-        />
-        <Script
-          src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'
-          strategy='beforeInteractive'
+         <Script
+          src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'
         />
       </body>
     </html>

@@ -9,7 +9,6 @@ interface SocialCardsProps {
 
 const SocialCards: React.FC<SocialCardsProps> = ({ title, icon, url, target = "_self" }) => {
   return (
-    <ul>
       <li>
         <div className="a-icon">{icon}</div>
         <div className="a-text">
@@ -18,7 +17,6 @@ const SocialCards: React.FC<SocialCardsProps> = ({ title, icon, url, target = "_
           </Link>
         </div>
       </li>
-    </ul>
   );
 };
 

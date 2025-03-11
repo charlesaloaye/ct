@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface PortfolioCardProps {
-  id: string | number;
   title: string;
   description: string;
   icon: React.ReactNode;
@@ -11,7 +10,6 @@ interface PortfolioCardProps {
 }
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
-  id,
   title,
   description,
   icon,
@@ -19,7 +17,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   url,
 }) => {
   return (
-    <div className="col-sm-6 col-lg-4 grid-item" id={id}>
+    <div className="col-sm-6 col-lg-4 grid-item">
       <div className="portfolio-box">
         <div className="portfolio-text">
           <h6>{title}</h6>
@@ -29,7 +27,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
           </Link>
         </div>
         <div className="portfolio-img">
-          <Image src={image} title={title} alt={title} height={250} width={500} />
+          <Image className="w-full h-auto" src={image} title={title} alt={title} height={250} width={500} />
           <Link className="px_modal portfolio-modal-link" href={url}>
             {icon}
           </Link>

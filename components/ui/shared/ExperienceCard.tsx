@@ -5,6 +5,7 @@ interface ExperienceCardProps {
   company: string;
   icon: React.ReactNode;
   description: string;
+  location: string,
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({
@@ -14,14 +15,15 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   company,
   icon,
   description,
+  location
 }) => {
   return (
-    <div className="resume-box">
+    <div className="resume-box mb-1">
       <ul>
         <li>
           <div className="icon">{icon}</div>
           <span className="time">
-            {fromYear} - {toYear}
+            {fromYear} - {toYear} | &nbsp;<strong>{location}</strong>
           </span>
           <h5>
             {role} - {company}

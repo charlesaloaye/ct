@@ -2,29 +2,29 @@
 CHARLES ALOAYE SEDENU PORTFOLIO BUILT WITH NEXT 15
 
 -------------------------------------------------------------------*/
-@import 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.cs';
+/* @import 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.cs';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css';
-@import "magnific-popup/dist/magnific-popup.css";
+@import "magnific-popup/dist/magnific-popup.css"; */
 
 /* @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"); */
 :root,
 [data-bs-theme=light] {
-  --px-theme:	#ffdad9;
-  --px-theme-text:	#2d1516;
+  --px-theme:	#493D9E;
+  --px-theme-text:	#fff;
   --px-bg:	#fcfcfc;
   --px-text:	#534343;
   --px-gray-1:	#f5f0f0;
   --px-gray-2:	#f3eaeb;
   --px-gray-3:	#f0e5e5;
   --px-gray-4:	#efe3e4;
-  --px-gray-5:	#eddfe0;
-  --px-border:	#f4dedd;
+  --px-gray-5:	#e6dfed;
+  --px-border:	#b185fc;
   --bs-heading-color:	#211a1a;
 }
 
 [data-bs-theme=dark] {
   --px-theme:	#5c3f3f;
-  --px-theme-text:	#ffdad9;
+  --px-theme-text:	#493D9E;
   --px-bg:	#211a1a;
   --px-text:	#d7c2c1;
   --px-gray-1:	#2f2525;
@@ -1419,6 +1419,11 @@ a {
 .feature-box-01 p {
   margin: 0;
 }
+.feature-box-01  > .icon:hover  {
+  color: #fff !important
+
+}
+
 .feature-box-01:hover:after {
   top: -6px;
   left: 6px;
@@ -1426,6 +1431,8 @@ a {
   bottom: 6px;
   -webkit-transform: rotate(4deg);
           transform: rotate(4deg);
+          color: #fff
+
 }
 .feature-box-01:hover .icon:after {
   top: -4px;
@@ -1435,6 +1442,7 @@ a {
   background: var(--px-theme);
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+          color: #fff
 }
 
 /* portfolio

@@ -10,7 +10,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ cta, description, icon }) => 
       <div className="icon">{icon}</div>
       <div className="text">
         <label>{cta}</label>
-        <p>{description}</p>
+        <p dangerouslySetInnerHTML={{__html: description}}/>
       </div>
     </li>
   );

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
     "magnific-popup": "^1.2.0",
@@ -17,7 +18,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-    "react-owl-carousel": "^2.3.3"
+    "react-owl-carousel": "^2.3.3",
+    "swiper": "^11.2.5",
+    "typeit-react": "^2.7.8"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

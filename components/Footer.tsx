@@ -1,30 +1,15 @@
-// 'use client'
 import { socials } from "@/constants/const";
 import Image from "next/image";
-import Link from "next/link"
-// import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Footer = () => {
-    
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   setLoading(false);
 
-  //   if(loading) {
-  //     require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  //     require(".././public/js/custom.js");
-  //     require(".././public/js/dark-light.js");
-  //   }
-
-  //   return;
-  // }, [loading]);
   return (
-<>
      <footer className="footer">
     <div className="container">
         <div className="footer-info">
-            <div className="footer-avatar">
-                <Image src="/assets/img/mask.jpg" title={`${process.env.NEXT_PUBLIC_APP_NAME}`} alt={`${process.env.NEXT_PUBLIC_APP_NAME}`} height={150} width={150}/>
+        <div className="footer-avatar">
+                <Image className="w-full h-auto" src="/assets/img/charlesaloaye.jpg" title={`${process.env.NEXT_PUBLIC_APP_NAME}`} alt={`${process.env.NEXT_PUBLIC_APP_NAME}`} height={150} width={150}/>
             </div>
             <h6>{process.env.NEXT_PUBLIC_APP_NAME}</h6>
         </div>
@@ -40,10 +25,6 @@ const Footer = () => {
     </div>
 </footer>
 
-{/* <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="beforeInteractive"/>
-<Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="beforeInteractive"/> */}
-
-</>
   )
 }
 

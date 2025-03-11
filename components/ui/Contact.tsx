@@ -1,7 +1,12 @@
+'use client'
+// import { useActionState } from "react"
 import ContactCard from "./shared/ContactCard"
 import { contacts } from "@/constants/const"
+// import { SendEmail } from "@/actions/sendEmail"
 
 const Contact = () => {
+
+    // const [state, Action] :any = useActionState(SendEmail, null);
   return (
     <section id="contact" data-scroll-index="4" className="section contactus-section gray-bg-1">
     <div className="container">

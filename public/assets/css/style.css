@@ -26,7 +26,7 @@ Primary use:    pxdraft
 @import url("../../https/fontsgoogleapiscom/2949242.css;400;500;600;700;800;900&display=swap");
 :root,
 [data-bs-theme=light] {
-  --px-theme:	#ffdad9;
+  --px-theme:	#493D9E;
   --px-theme-text:	#2d1516;
   --px-bg:	#fcfcfc;
   --px-text:	#534343;
@@ -41,7 +41,7 @@ Primary use:    pxdraft
 
 [data-bs-theme=dark] {
   --px-theme:	#5c3f3f;
-  --px-theme-text:	#ffdad9;
+  --px-theme-text:	#493D9E;
   --px-bg:	#211a1a;
   --px-text:	#d7c2c1;
   --px-gray-1:	#2f2525;

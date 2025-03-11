@@ -15,7 +15,6 @@ const Portfolio = () => {
      {projects.map((portfolio, index) => (
               <PortfolioCard
               key={index}
-              id={index}
               image={portfolio.image}
                 title={portfolio.title}
                 description={portfolio.description}
