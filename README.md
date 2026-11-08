@@ -273,6 +273,14 @@ php artisan config:cache        # also needed on PHP 8.5, see below
 
 If `storage:link` is disabled on the host, create the symlink in the file manager instead.
 
+**Uploading over an older app.** Copying files into a folder never deletes the old app's files. Its migrations then run too, and `migrate` fails, for example with `errno: 150 "Foreign key constraint is incorrectly formed"`. To clean up, use `deploy/clean-stray-files.sh`:
+
+- It compares the code folders against `deploy/manifest.txt` and moves anything not in it to `~/stray-files-<time>/`.
+- With no options it only lists what it would move; add `--apply` to move them.
+- It never touches `.env`, `vendor/`, `storage/` or the build files.
+
+After adding or removing project files, regenerate the manifest with `git ls-files > deploy/manifest.txt`.
+
 Without `config:cache`, PHP 8.5 can print a deprecation notice from Laravel 11's own default config (`PDO::MYSQL_ATTR_SSL_CA`), unless the host hides PHP notices.
 
 Checked on Apache 2.4.67 with PHP-FPM:
