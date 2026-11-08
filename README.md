@@ -248,3 +248,35 @@ tar czf /backups/uploads-$(date +%F).tgz -C /var/www/charlestechy/storage/app pu
 ```
 
 `APP_KEY` encrypts the saved AI keys and SMTP password. Keep a copy of `.env`. If `APP_KEY` changes, those secrets can no longer be read and must be entered again in Integrations.
+
+## 6. Shared hosting (Hostinger, cPanel): document root is the project folder
+
+Best: point the domain's document root at `public/` (hPanel → Websites → Advanced, or cPanel → Domains). Then the root `.htaccess` is never used.
+
+If the host only lets the domain serve the project folder itself, upload the whole project there. The root [.htaccess](.htaccess) then does this:
+
+- **Routes every request into `public/`.** `.env`, `vendor/`, the app code and the real `storage/` folder can't be reached from the web.
+- **Answers `/` with Laravel.** Without that, `/` returns 403 on hosts whose default index page is `index.html`.
+- **Blocks nothing by name.** A rule that blocks `storage` 403s every upload at `/storage/...`, including logos.
+
+[public/.htaccess](public/.htaccess) also does this:
+
+- **Redirects any `/public/...` address (301) to the clean URL.**
+- **Removes trailing slashes** (301): `/about/` goes to `/about`, not `/public/about`.
+
+Then, on the server:
+
+```bash
+php artisan storage:link        # creates public/storage → storage/app/public
+php artisan config:cache        # also needed on PHP 8.5, see below
+```
+
+If `storage:link` is disabled on the host, create the symlink in the file manager instead.
+
+Without `config:cache`, PHP 8.5 can print a deprecation notice from Laravel 11's own default config (`PDO::MYSQL_ATTR_SSL_CA`), unless the host hides PHP notices.
+
+Checked on Apache 2.4.67 with PHP-FPM:
+
+- **Load (200):** every page, uploads and build files.
+- **Refused or not found:** `.env`, `.git`, `.htaccess`, `composer.json`, `artisan`, `vendor/` and the app code.
+- **Redirected (301):** `/public/...` addresses and trailing slashes. Query strings are kept.

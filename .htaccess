@@ -1,0 +1,36 @@
+# Root .htaccess for shared hosting (Hostinger, cPanel) where the domain's
+# document root is the project folder instead of public/.
+#
+# Every request is routed into public/, so app code, .env, vendor/ and the real
+# storage/ folder can never be served. Nothing is blocked by name: blocking
+# "storage" here would 403 the uploads at /storage/... (public/storage symlink).
+# Requests that reach public/ follow public/.htaccess, which also 301s any
+# /public/... address to the clean URL. If you can point the document root at
+# public/ instead, do that; this file is then ignored.
+
+<IfModule mod_negotiation.c>
+    Options -MultiViews
+</IfModule>
+Options -Indexes
+
+# Hosts whose default index is index.html only would answer "/" with a 403.
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Hidden files (.env, .git) are refused, except ACME / .well-known for SSL.
+    RewriteRule (^|/)\.(?!well-known/) - [F,L]
+
+    # "/" goes straight to Laravel's front controller (the root 403 otherwise).
+    RewriteRule ^$ public/index.php [L]
+
+    # Everything else goes into public/.
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Without mod_rewrite nothing would be routed, so refuse rather than expose.
+<IfModule !mod_rewrite.c>
+    Require all denied
+</IfModule>

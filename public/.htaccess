@@ -5,6 +5,16 @@
 
     RewriteEngine On
 
+    # Hidden files (.htaccess etc.) are refused, except ACME / .well-known for SSL.
+    RewriteRule (^|/)\.(?!well-known/) - [F,L]
+
+    # Hosting where the project folder is the document root (see ../.htaccess):
+    # a /public/... address typed or linked from outside is 301'd to the clean
+    # URL, so every page has one address. Never matches when public/ itself is
+    # the document root.
+    RewriteCond %{THE_REQUEST} ^\S+\s/+public(/|\s|\?) [NC]
+    RewriteRule ^(.*)$ /$1 [L,R=301,NE]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -13,10 +23,14 @@
     RewriteCond %{HTTP:x-xsrf-token} .
     RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
 
-    # Redirect Trailing Slashes If Not A Folder...
+    # Redirect Trailing Slashes If Not A Folder... Built from the original
+    # request line, so it stays correct when ../.htaccess rewrote the path into
+    # public/ (REQUEST_URI would otherwise send /about/ to /public/about).
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+    # (The query string is re-attached by Apache; building "?" from a capture
+    # is refused since Apache 2.4.60.)
+    RewriteCond %{THE_REQUEST} ^\S+\s(/[^\s?]*?)/+(\?|\s)
+    RewriteRule ^ %1 [L,R=301,NE]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
