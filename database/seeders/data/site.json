@@ -1,0 +1,344 @@
+{
+ "availability": "Taking on 2 new projects for Q1 2027",
+ "availabilityShort": "2 slots open for Q1 2027",
+ "clients": [
+  "Delta State University",
+  "Evergreen Updates",
+  "Wavecrest",
+  "Edu Abroad",
+  "RCCG Faith Foundation",
+  "Hamplus Technologies",
+  "EsfLogistics",
+  "MrHire"
+ ],
+ "contact": {
+  "email": "hello@charlestechy.com",
+  "cv": "https://www.charlestechy.com/resume/charlesaloaye.pdf",
+  "location": "Lagos · Remote worldwide"
+ },
+ "process": [
+  {
+   "n": "01",
+   "t": "Discovery call",
+   "d": "20 minutes to understand the goal, the users and the deadline."
+  },
+  {
+   "n": "02",
+   "t": "Scope & quote",
+   "d": "A clear plan with milestones and a fixed price or weekly rate."
+  },
+  {
+   "n": "03",
+   "t": "Build in the open",
+   "d": "Weekly demos and a staging link you can click through anytime."
+  },
+  {
+   "n": "04",
+   "t": "Launch & support",
+   "d": "Deploy, monitor and stay on hand for fixes after go-live."
+  }
+ ],
+ "products": [
+  {
+   "mono": "Fs",
+   "role": "Founder",
+   "name": "FrontStore",
+   "cat": "Commerce · SaaS",
+   "desc": "Lets small businesses launch an online store in under 2 minutes, with ordering, checkout, payments and delivery running inside WhatsApp.",
+   "proof": "Launched on Product Hunt",
+   "domain": "frontstore.app",
+   "href": "https://frontstore.app"
+  },
+  {
+   "mono": "Dt",
+   "role": "Founder",
+   "name": "Delsutools",
+   "cat": "Education · Student tools",
+   "desc": "A suite of academic tools built for Delta State University students - the everyday calculators and utilities campus life needs.",
+   "proof": "Built for DELSU students",
+   "domain": "delsutools.ng",
+   "href": "https://delsutools.ng"
+  },
+  {
+   "mono": "Ig",
+   "role": "Creator",
+   "name": "Instagram Influencer Deep Analyzer",
+   "cat": "Automation · Apify Actor",
+   "desc": "Pulls Instagram profile data and scores content, engagement and audience signals - callable by AI agents and wired into Slack via MCP.",
+   "proof": "95 users · 96.6% run success",
+   "domain": "apify.com/charlestechy",
+   "href": "https://apify.com/charlestechy"
+  }
+ ],
+ "projects": [
+  {
+   "tag": "Education",
+   "title": "Edu Abroad student portal",
+   "desc": "Document uploads, course selection and live application tracking for students applying abroad.",
+   "domain": "eduabroad.ng",
+   "href": "https://eduabroad.ng",
+   "shot": "eduabroad.png",
+   "caseStudy": "edu-abroad"
+  },
+  {
+   "tag": "Logistics",
+   "title": "Evergreen Updates",
+   "desc": "Backend automation for inventory, delivery scheduling and billing for a London logistics firm.",
+   "domain": "evergreenupdates.co.uk",
+   "href": "https://evergreenupdates.co.uk",
+   "shot": "evergreen.png",
+   "caseStudy": "evergreen-updates"
+  },
+  {
+   "tag": "Fintech",
+   "title": "Wavecrest investment platform",
+   "desc": "Public site and investor dashboard for courses, resources and account management.",
+   "domain": "wavecresttradinginstitute.com",
+   "href": "https://wavecresttradinginstitute.com",
+   "shot": "wavecresthome.png",
+   "caseStudy": "wavecrest"
+  },
+  {
+   "tag": "Media",
+   "title": "Storyteller publishing CMS",
+   "desc": "A blog and content platform built for fast publishing and clean reading on mobile.",
+   "domain": "storyteller.ng",
+   "href": "https://storyteller.ng",
+   "shot": "storyteller.png",
+   "caseStudy": null
+  }
+ ],
+ "rescue": [
+  {
+   "n": "01",
+   "t": "Audit in days, not weeks",
+   "d": "A written report: what works, what is broken, and a fixed plan to launch."
+  },
+  {
+   "n": "02",
+   "t": "Fix and finish",
+   "d": "Stabilise first, then ship the missing features with weekly demos."
+  },
+  {
+   "n": "03",
+   "t": "Launch and hand over",
+   "d": "Deployed, documented and yours - no lock-in."
+  }
+ ],
+ "roles": [
+  {
+   "years": "2024 - 2025",
+   "role": "Software Developer",
+   "org": "Evergreen Updates Ltd.",
+   "place": "London",
+   "desc": "logistics automation for inventory, scheduling and billing."
+  },
+  {
+   "years": "2024 - Now",
+   "role": "Web Developer",
+   "org": "RCCG Faith Foundation",
+   "place": "Essex",
+   "desc": "event registration and secure online giving."
+  },
+  {
+   "years": "2022 - Now",
+   "role": "Software Developer",
+   "org": "Delta State University",
+   "place": "Delta",
+   "desc": "digitised bursary financial operations."
+  },
+  {
+   "years": "2020 - Now",
+   "role": "CTO",
+   "org": "Hamplus Technologies",
+   "place": "Delta",
+   "desc": "leads delivery of client apps in React, Express and MySQL."
+  },
+  {
+   "years": "2019 - Now",
+   "role": "Software Developer",
+   "org": "Wavecrest Trading Institute",
+   "place": "Ekiti",
+   "desc": "site and dashboard for courses and resources."
+  },
+  {
+   "years": "2023 - 2024",
+   "role": "Course Facilitator",
+   "org": "Aiivon Global Innovations",
+   "place": "Benue",
+   "desc": "built and taught a full-stack curriculum."
+  },
+  {
+   "years": "2020 - 2022",
+   "role": "Web Developer",
+   "org": "Edu Abroad Limited",
+   "place": "Edo",
+   "desc": "student application portal."
+  },
+  {
+   "years": "2018 - 2020",
+   "role": "Web Developer",
+   "org": "Global Success Ministries",
+   "place": "Lagos",
+   "desc": "ministry site with online payments."
+  }
+ ],
+ "services": [
+  {
+   "n": "01",
+   "title": "Web applications",
+   "desc": "Full products end to end - Laravel or FastAPI backends, React frontends, admin dashboards included."
+  },
+  {
+   "n": "02",
+   "title": "Mobile apps",
+   "desc": "Cross-platform iOS and Android apps in React Native and Expo, sharing logic with your web product."
+  },
+  {
+   "n": "03",
+   "title": "Codebase rescue",
+   "desc": "Take over abandoned or broken projects, stabilise them and get them to launch without starting over."
+  },
+  {
+   "n": "04",
+   "title": "APIs & payments",
+   "desc": "REST APIs, JWT and OAuth, and payments through Paystack, Flutterwave and Stripe."
+  },
+  {
+   "n": "05",
+   "title": "Data & cloud",
+   "desc": "MySQL, PostgreSQL and MongoDB schemas, deployed on AWS, DigitalOcean or Vercel with CI/CD."
+  },
+  {
+   "n": "06",
+   "title": "Performance & support",
+   "desc": "Faster load times, bug fixes and ongoing feature work on a monthly retainer."
+  },
+  {
+   "n": "07",
+   "title": "Mentorship & training",
+   "desc": "One-to-one mentorship and hands-on training for developers and teams, from a TRCN-certified educator who has built and taught a full-stack curriculum."
+  }
+ ],
+ "socials": [
+  {
+   "label": "LinkedIn",
+   "href": "https://www.linkedin.com/in/charles-sedenu/"
+  },
+  {
+   "label": "GitHub",
+   "href": "https://github.com/charlesaloaye"
+  },
+  {
+   "label": "X",
+   "href": "https://x.com/sedenucharles"
+  },
+  {
+   "label": "YouTube",
+   "href": "https://www.youtube.com/channel/UCz5nyN0Og65kX8dAYg7dI0A"
+  },
+  {
+   "label": "Medium",
+   "href": "https://charlestechy.medium.com"
+  },
+  {
+   "label": "DEV",
+   "href": "https://dev.to/charlestechy"
+  },
+  {
+   "label": "Instagram",
+   "href": "https://instagram.com/charlestechy"
+  },
+  {
+   "label": "Facebook",
+   "href": "https://m.me/sedenu.charles"
+  },
+  {
+   "label": "Hashnode",
+   "href": "https://hashnode.com/@charlestechy"
+  },
+  {
+   "label": "Threads",
+   "href": "https://www.threads.com/@charlestechy"
+  },
+  {
+   "label": "Apify",
+   "href": "https://apify.com/charlestechy"
+  }
+ ],
+ "stack": [
+  {
+   "label": "PHP",
+   "items": [
+    "Laravel"
+   ]
+  },
+  {
+   "label": "Python",
+   "items": [
+    "FastAPI",
+    "SQLAlchemy"
+   ]
+  },
+  {
+   "label": "JavaScript & TypeScript",
+   "items": [
+    "React",
+    "Next.js",
+    "React Native"
+   ]
+  },
+  {
+   "label": "APIs",
+   "items": [
+    "REST APIs"
+   ]
+  },
+  {
+   "label": "Databases",
+   "items": [
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Prisma"
+   ]
+  },
+  {
+   "label": "DevOps & cloud",
+   "items": [
+    "Docker",
+    "Redis",
+    "Cloud infrastructure & deployment"
+   ]
+  },
+  {
+   "label": "Product",
+   "items": [
+    "SaaS architecture",
+    "Product engineering"
+   ]
+  }
+ ],
+ "stats": [
+  {
+   "v": "10+",
+   "l": "Years shipping production code",
+   "short": "Years shipping"
+  },
+  {
+   "v": "50+",
+   "l": "Projects delivered",
+   "short": "Projects delivered"
+  },
+  {
+   "v": "30+",
+   "l": "Clients served",
+   "short": "Clients served"
+  },
+  {
+   "v": "NG · UK",
+   "l": "Teams across two continents",
+   "short": "Teams worldwide"
+  }
+ ]
+}

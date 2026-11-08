@@ -1,0 +1,233 @@
+{
+  "categories": [
+    "All",
+    "Codebase rescue",
+    "Engineering",
+    "Payments",
+    "Mobile",
+    "Product",
+    "AI & automation",
+    "Freelancing",
+    "Career"
+  ],
+  "posts": [
+    {
+      "slug": "rescue-stalled-laravel-codebase",
+      "featured": true,
+      "cat": "Codebase rescue",
+      "read": "8 min read",
+      "title": "How I rescue a stalled Laravel codebase in the first week",
+      "excerpt": "The exact five-day routine I run when a client hands me a half-finished app, a missing developer and a launch date that won't move.",
+      "tags": [
+        "Laravel",
+        "Legacy code",
+        "Freelancing"
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Most of the projects I take on now don't start from a blank repo. They start with a message like: \"Our developer stopped replying, the app is 70% done, and we've already told customers it launches next month.\""
+        },
+        {
+          "type": "p",
+          "text": "The instinct is to rewrite. It's almost always the wrong call. A rewrite throws away months of decisions you've already paid for and resets the clock to zero. Instead, I spend the first week finding out exactly what's there and making it safe to change."
+        },
+        {
+          "type": "h2",
+          "id": "d1",
+          "toc": "Day 1 - Get it running",
+          "text": "Day 1 - Get it running on my machine"
+        },
+        {
+          "type": "p",
+          "text": "Before I read a single controller, I try to boot the app locally. This alone tells me a lot: missing env variables, a database that only exists on the old developer's laptop, packages pinned to versions that no longer install."
+        },
+        {
+          "type": "code",
+          "text": "composer install\ncp .env.example .env && php artisan key:generate\nphp artisan migrate --seed\nphp artisan test"
+        },
+        {
+          "type": "p",
+          "text": "If any of those four commands fails, that's my first finding - and usually the first fix."
+        },
+        {
+          "type": "h2",
+          "id": "d2",
+          "toc": "Day 2 - Map the damage",
+          "text": "Day 2 - Map the damage"
+        },
+        {
+          "type": "p",
+          "text": "I walk every route the user can reach and note what works, what errors and what's half-built. I read the migrations to understand the data model, then check the payment and auth flows first - those are where bugs cost real money."
+        },
+        {
+          "type": "h2",
+          "id": "d3",
+          "toc": "Day 3 - The written plan",
+          "text": "Day 3 - Write the plan down"
+        },
+        {
+          "type": "p",
+          "text": "The client gets a short written report: what's solid, what's broken, what's missing, and a prioritised list to get to launch. Plain English, no jargon. This is the document that turns \"I hope this works\" into a plan with dates."
+        },
+        {
+          "type": "quote",
+          "text": "A stalled project rarely needs a rewrite. It needs someone to read the code, tell the truth about it and start shipping."
+        },
+        {
+          "type": "h2",
+          "id": "d4",
+          "toc": "Day 4 - Stabilise",
+          "text": "Day 4 - Stabilise before adding anything"
+        },
+        {
+          "type": "p",
+          "text": "I add error tracking, fix the crashes found on day two, and write a handful of tests around the most important flows - sign-up, checkout, the core feature. Now I can change code without fear."
+        },
+        {
+          "type": "h2",
+          "id": "d5",
+          "toc": "Day 5 - First demo",
+          "text": "Day 5 - Ship something the client can see"
+        },
+        {
+          "type": "p",
+          "text": "By Friday there's a staging link and a short demo. Even if it's only a fixed checkout and a working admin login, momentum matters. From here it's weekly demos until launch."
+        },
+        {
+          "type": "p",
+          "text": "If your project is stuck somewhere between \"almost done\" and \"never launched\", that first week is usually what gets it moving again."
+        }
+      ]
+    },
+    {
+      "slug": "codebase-audit-checklist",
+      "cat": "Codebase rescue",
+      "read": "6 min read",
+      "title": "The codebase audit checklist I send every new client",
+      "excerpt": "Twenty questions that tell me in an afternoon whether an app can be saved - and what it will take."
+    },
+    {
+      "slug": "changing-code-with-no-tests",
+      "cat": "Codebase rescue",
+      "read": "7 min read",
+      "title": "Changing code with no tests without breaking production",
+      "excerpt": "Characterisation tests, feature flags and small deploys: how to move fast in a codebase you didn't write."
+    },
+    {
+      "slug": "paystack-vs-flutterwave",
+      "cat": "Payments",
+      "read": "9 min read",
+      "title": "Paystack vs Flutterwave for Nigerian SaaS: what I use and why",
+      "excerpt": "Fees, payouts, webhooks and developer experience compared from real client builds."
+    },
+    {
+      "slug": "selling-on-whatsapp-frontstore",
+      "cat": "Product",
+      "read": "6 min read",
+      "title": "Selling on WhatsApp: lessons from building FrontStore",
+      "excerpt": "Why Nigerian small businesses live in WhatsApp, and how we built checkout around that instead of fighting it."
+    },
+    {
+      "slug": "university-payroll-software",
+      "cat": "Engineering",
+      "read": "10 min read",
+      "title": "Building payroll software for a Nigerian university bursary",
+      "excerpt": "Moving a bursary off paper and spreadsheets: data migration, approvals and the payslip that has to be right every month."
+    },
+    {
+      "slug": "react-native-expo-or-native",
+      "cat": "Mobile",
+      "read": "7 min read",
+      "title": "React Native with Expo or fully native? How I advise clients",
+      "excerpt": "A plain-English decision guide for founders choosing how to build their first mobile app."
+    },
+    {
+      "slug": "laravel-or-nextjs-api",
+      "cat": "Engineering",
+      "read": "8 min read",
+      "title": "Laravel or Next.js API routes for your MVP backend",
+      "excerpt": "Where each one shines, where it hurts, and the setup I reach for on most client projects."
+    },
+    {
+      "slug": "web-apps-on-slow-3g",
+      "cat": "Engineering",
+      "read": "7 min read",
+      "title": "Designing web apps that still load on a slow 3G connection",
+      "excerpt": "Image budgets, caching and server rendering for users on patchy African mobile data."
+    },
+    {
+      "slug": "pricing-from-lagos",
+      "cat": "Freelancing",
+      "read": "8 min read",
+      "title": "Pricing software work from Lagos for UK and US clients",
+      "excerpt": "Fixed price vs weekly rate, how I quote, and why competing on cheap is a losing game."
+    },
+    {
+      "slug": "delsutools-story",
+      "cat": "Product",
+      "read": "5 min read",
+      "title": "Building student tools that get used: the Delsutools story",
+      "excerpt": "What I learned shipping free academic tools to thousands of university students."
+    },
+    {
+      "slug": "zero-downtime-laravel-digitalocean",
+      "cat": "Engineering",
+      "read": "9 min read",
+      "title": "Zero-downtime Laravel deploys on DigitalOcean",
+      "excerpt": "A simple release setup with symlinked releases, queues and migrations that won't take your site down."
+    },
+    {
+      "slug": "instagram-analyzer-safe-for-agents",
+      "cat": "AI & automation",
+      "read": "5 min read",
+      "title": "Making my Instagram Analyzer Actor safe for an AI agent to call",
+      "excerpt": "Guardrails, clear inputs and predictable outputs for a scraper that agents can run on their own."
+    },
+    {
+      "slug": "apify-actor-slack-mcp",
+      "cat": "AI & automation",
+      "read": "5 min read",
+      "title": "Wiring an Apify Actor into Slack with MCP - and what broke first",
+      "excerpt": "Connecting my Instagram analyzer to Slack through an MCP connector, and the bugs I hit on the way."
+    },
+    {
+      "slug": "sql-database-for-a-blog",
+      "cat": "Engineering",
+      "read": "4 min read",
+      "title": "Designing a SQL database for a blog application",
+      "excerpt": "Posts, authors, tags and comments: a clean relational schema you can build on."
+    },
+    {
+      "slug": "php-source-code-viewer",
+      "cat": "Engineering",
+      "read": "5 min read",
+      "title": "Building an HTML and JS source code viewer with PHP",
+      "excerpt": "A small PHP tool that fetches a page and shows its source - and what it teaches about HTTP."
+    },
+    {
+      "slug": "first-apple-laptop",
+      "cat": "Career",
+      "read": "4 min read",
+      "title": "How I got my first Apple laptop as a developer",
+      "excerpt": "The years of building on borrowed and budget machines before that first MacBook."
+    },
+    {
+      "slug": "letter-to-young-developers",
+      "cat": "Career",
+      "read": "3 min read",
+      "title": "A letter to young developers",
+      "excerpt": "What I wish someone had told me when I wrote my first line of code at Delta State University."
+    }
+  ],
+  "tints": {
+    "Codebase rescue": "#DDF5E9",
+    "Payments": "#FCEFD3",
+    "Mobile": "#E1EAFE",
+    "Engineering": "#EEECE6",
+    "Product": "#FFE4D8",
+    "Career": "#F0E6F7",
+    "AI & automation": "#DCF1F3",
+    "Freelancing": "#F6F1D9"
+  }
+}

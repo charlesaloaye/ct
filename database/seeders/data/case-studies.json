@@ -1,0 +1,210 @@
+{
+  "caseStudies": {
+    "delsu-bursary": {
+      "cat": "Finance · Public sector",
+      "title": "Digitising payroll for the Delta State University bursary",
+      "summary": "A web system that moved the bursary department off paper and spreadsheets, so staff payslips and financial records are accurate, searchable and on time.",
+      "client": "Delta State University",
+      "role": "Lead developer",
+      "years": "2022 - present",
+      "domain": "bursarydelsu.net",
+      "href": "https://bursarydelsu.net",
+      "shot": "delta-state-university.png",
+      "challenge": "The bursary handled staff pay and financial operations largely by hand. Records lived in spreadsheets and paper files, payslips took time to prepare, and every manual step was a chance for an error that landed on someone's salary.",
+      "built": "I designed and built a web-based system that digitises the bursary's financial operations, with payslip management at its core. Staff records, pay data and payslips now live in one place, with the bursary team in control.",
+      "features": [
+        {
+          "n": "01",
+          "t": "Payslip management",
+          "d": "Payslips generated and stored digitally for university staff."
+        },
+        {
+          "n": "02",
+          "t": "Central staff records",
+          "d": "One source of truth for staff and pay data instead of scattered sheets."
+        },
+        {
+          "n": "03",
+          "t": "Bursary admin tools",
+          "d": "Screens for the bursary team to manage records and processes."
+        },
+        {
+          "n": "04",
+          "t": "Ongoing support",
+          "d": "Maintained and extended since 2022 as the department's needs grow."
+        }
+      ],
+      "outcome": "The department replaced manual processes with a single system, significantly improving accuracy and cutting down on manual errors.",
+      "results": [
+        {
+          "v": "[--]",
+          "l": "Staff payslips handled each month"
+        },
+        {
+          "v": "[--]",
+          "l": "Hours saved at month-end"
+        },
+        {
+          "v": "2022",
+          "l": "Live and in use since"
+        }
+      ]
+    },
+    "edu-abroad": {
+      "cat": "Education · Portal",
+      "title": "A student application portal for Edu Abroad",
+      "summary": "An online portal that lets students apply to study abroad - upload documents, pick courses and track every application in one place.",
+      "client": "Edu Abroad Limited",
+      "role": "Web developer",
+      "years": "2020 - 2022",
+      "domain": "eduabroad.ng",
+      "href": "https://eduabroad.ng",
+      "shot": "eduabroad.png",
+      "challenge": "Applications came in through scattered emails and paperwork. Students couldn't see where their application stood, and the admin team spent hours chasing documents and answering status questions.",
+      "built": "I built an intuitive application portal that streamlines document submission, course selection and application tracking for students, with matching tools for the admissions team.",
+      "features": [
+        {
+          "n": "01",
+          "t": "Document uploads",
+          "d": "Students submit transcripts and IDs straight into their application."
+        },
+        {
+          "n": "02",
+          "t": "Course selection",
+          "d": "Browse and choose courses inside the portal."
+        },
+        {
+          "n": "03",
+          "t": "Application tracking",
+          "d": "Live status so students always know what is next."
+        },
+        {
+          "n": "04",
+          "t": "Admin workflow",
+          "d": "Staff review and update applications in one dashboard."
+        }
+      ],
+      "outcome": "The portal significantly reduced the administrative burden on staff and gave prospective students a far better experience.",
+      "results": [
+        {
+          "v": "[--]",
+          "l": "Applications processed"
+        },
+        {
+          "v": "[--]",
+          "l": "Partner institutions"
+        },
+        {
+          "v": "2 yrs",
+          "l": "Built and maintained"
+        }
+      ]
+    },
+    "evergreen-updates": {
+      "cat": "Logistics · UK",
+      "title": "Automating logistics operations for Evergreen Updates",
+      "summary": "Backend systems that automate inventory, delivery scheduling and billing for a London-based logistics business.",
+      "client": "Evergreen Updates Ltd.",
+      "role": "Software developer",
+      "years": "2024 - 2025",
+      "domain": "evergreenupdates.co.uk",
+      "href": "https://evergreenupdates.co.uk",
+      "shot": "evergreen.png",
+      "challenge": "Core operations - tracking stock, scheduling deliveries and billing customers - depended on manual steps that slowed the team down and made mistakes easy.",
+      "built": "I built robust backend systems that automate the key logistics processes, connecting inventory, scheduling and billing so each step feeds the next.",
+      "features": [
+        {
+          "n": "01",
+          "t": "Inventory management",
+          "d": "Stock levels tracked and updated automatically."
+        },
+        {
+          "n": "02",
+          "t": "Delivery scheduling",
+          "d": "Deliveries planned and assigned from one system."
+        },
+        {
+          "n": "03",
+          "t": "Automated billing",
+          "d": "Invoices generated from completed jobs."
+        },
+        {
+          "n": "04",
+          "t": "Public website",
+          "d": "A clean site presenting the company's services."
+        }
+      ],
+      "outcome": "Day-to-day logistics moved from manual handling to automated workflows the team could rely on.",
+      "results": [
+        {
+          "v": "[--]",
+          "l": "Deliveries scheduled per month"
+        },
+        {
+          "v": "[--]",
+          "l": "Billing time saved"
+        },
+        {
+          "v": "London",
+          "l": "Based in the UK"
+        }
+      ]
+    },
+    "wavecrest": {
+      "cat": "Fintech · Dashboard",
+      "title": "Website and investor dashboard for Wavecrest",
+      "summary": "A responsive public site plus a logged-in dashboard that gives Wavecrest Trading Institute's students and stakeholders access to courses, events and resources.",
+      "client": "Wavecrest Trading Institute",
+      "role": "Software developer",
+      "years": "2019 - present",
+      "domain": "wavecresttradinginstitute.com",
+      "href": "https://wavecresttradinginstitute.com",
+      "shot": "wavecresthome.png",
+      "challenge": "The institute needed a stronger online presence and a single place for students and investors to find courses, events and resources.",
+      "built": "I designed and built a responsive website and a member dashboard, giving the institute a professional front door and a self-service area for its community.",
+      "features": [
+        {
+          "n": "01",
+          "t": "Responsive website",
+          "d": "Courses, events and resources on every device."
+        },
+        {
+          "n": "02",
+          "t": "Member dashboard",
+          "d": "A logged-in area for students and investors."
+        },
+        {
+          "n": "03",
+          "t": "Investment management",
+          "d": "Tools for managing investment accounts."
+        },
+        {
+          "n": "04",
+          "t": "Long-term partner",
+          "d": "Supporting the institute since 2019."
+        }
+      ],
+      "outcome": "The institute gained a stronger online presence, and students and stakeholders now find what they need without contacting staff.",
+      "results": [
+        {
+          "v": "[--]",
+          "l": "Active members"
+        },
+        {
+          "v": "[--]",
+          "l": "Courses listed"
+        },
+        {
+          "v": "2019",
+          "l": "Partner since"
+        }
+      ]
+    }
+  },
+  "caseStudyOrder": [
+    "delsu-bursary",
+    "edu-abroad",
+    "evergreen-updates",
+    "wavecrest"
+  ]
+}
