@@ -1,0 +1,1 @@
+import{n as e}from"./PageShell-CmhH0po7.js";import{t}from"./ContactForm-COjyjoEi.js";import{t as n}from"./jsx-runtime-CKKoGY4q.js";var r=n();function i({copy:n,contactCopy:i}){return(0,r.jsx)(e,{copy:n,children:(0,r.jsx)(t,{copy:{...i,heading:null}})})}export{i as default};
