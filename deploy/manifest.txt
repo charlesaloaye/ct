@@ -212,10 +212,12 @@ database/seeders/data/media/anglia-ruskin-university.jpg
 database/seeders/data/media/cdsbenue.jpg
 database/seeders/data/media/charlesaloaye.pdf
 database/seeders/data/media/charlestechy1.jpg
+database/seeders/data/media/client-builtdifferent.png
 database/seeders/data/media/client-delsu.png
 database/seeders/data/media/client-eduabroad.png
 database/seeders/data/media/client-esflogistics.png
 database/seeders/data/media/client-evergreen.png
+database/seeders/data/media/client-gen6ixx.png
 database/seeders/data/media/client-hamplus.jpg
 database/seeders/data/media/client-mrhire.png
 database/seeders/data/media/client-rccg.png

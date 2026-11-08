@@ -22,6 +22,7 @@ class VentureSeeder extends Seeder
             'role' => 'Founder & CTO',
             'is_founder' => true,
             'url' => 'https://builtdifferent.ng',
+            'logo_path' => $this->media('client-builtdifferent.png', 'Built Different LTD', 'media/clients'),
             'description' => 'A Lagos software company that designs and builds custom software, mobile apps, AI integrations and cloud systems for businesses, and the parent company of Charles\'s products: Frontstore, DelsuTools, UniAdvisor and JAMB Advisor.',
             'status' => 'featured',
             'sort_order' => 1,
@@ -43,6 +44,9 @@ class VentureSeeder extends Seeder
             'name' => 'Gen6ixx LTD',
             'role' => 'CTO',
             'is_founder' => false,
+            'url' => 'https://gen6ixx.co.uk',
+            'logo_path' => $this->media('client-gen6ixx.png', 'Gen6ixx LTD', 'media/clients'),
+            'description' => 'A digital growth and performance agency providing web applications, SEO and digital infrastructure for businesses across the UK.',
             'status' => 'published',
             'sort_order' => 3,
         ]);
