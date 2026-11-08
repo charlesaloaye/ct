@@ -17,9 +17,10 @@ class AdminUserSeeder extends Seeder
             throw new RuntimeException('Set ADMIN_EMAIL and ADMIN_PASSWORD in .env before seeding.');
         }
 
-        $user = User::query()->firstOrNew(['email' => $email]);
+        $user = User::query()->where('is_admin', true)->first() ?: new User();
         $user->forceFill([
-            'name' => config('site.admin.name'),
+            'name' => config('site.admin.name', 'Charles Aloaye'),
+            'email' => $email,
             'password' => $password,
             'is_admin' => true,
             'email_verified_at' => now(),

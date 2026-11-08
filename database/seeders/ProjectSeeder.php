@@ -134,8 +134,7 @@ class ProjectSeeder extends Seeder
             $fields['domain'] = null;
         }
 
-        Project::query()->create([
-            'slug' => $slug,
+        Project::query()->updateOrCreate(['slug' => $slug], [
             'sort_order' => $order,
             'show_on_mobile' => true,
             'screenshot_path' => $shot ? $this->media($shot, $fields['title'], 'media/projects') : null,

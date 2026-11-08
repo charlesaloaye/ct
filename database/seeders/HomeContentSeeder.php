@@ -33,12 +33,11 @@ class HomeContentSeeder extends Seeder
         $site = $this->data('site');
 
         foreach ($site['stats'] as $i => $s) {
-            Stat::query()->create(['value' => $s['v'], 'label' => $s['l'], 'short_label' => $s['short'], 'sort_order' => $i + 1]);
+            Stat::query()->updateOrCreate(['label' => $s['l']], ['value' => $s['v'], 'short_label' => $s['short'], 'sort_order' => $i + 1]);
         }
 
         foreach ($site['clients'] as $i => $name) {
-            Client::query()->create([
-                'name' => $name,
+            Client::query()->updateOrCreate(['name' => $name], [
                 // Real logos from each organisation's own site. Others show their name until one is uploaded.
                 'logo_path' => isset(self::LOGOS[$name]) ? $this->media(self::LOGOS[$name], $name, 'media/clients') : null,
                 'sort_order' => $i + 1,
@@ -46,36 +45,36 @@ class HomeContentSeeder extends Seeder
         }
 
         foreach ($site['products'] as $i => $p) {
-            Product::query()->create([
-                'mono' => $p['mono'], 'role' => $p['role'], 'name' => $p['name'], 'category' => $p['cat'],
+            Product::query()->updateOrCreate(['name' => $p['name']], [
+                'mono' => $p['mono'], 'role' => $p['role'], 'category' => $p['cat'],
                 'description' => $p['desc'], 'proof' => $p['proof'], 'domain' => $p['domain'], 'url' => $p['href'],
                 'status' => 'published', 'sort_order' => $i + 1,
             ]);
         }
 
         foreach ($site['rescue'] as $i => $r) {
-            RescueStep::query()->create(['number' => $r['n'], 'title' => $r['t'], 'description' => $r['d'], 'sort_order' => $i + 1]);
+            RescueStep::query()->updateOrCreate(['number' => $r['n']], ['title' => $r['t'], 'description' => $r['d'], 'sort_order' => $i + 1]);
         }
 
         foreach ($site['services'] as $i => $s) {
-            Service::query()->create([
-                'number' => $s['n'], 'title' => $s['title'], 'description' => $s['desc'],
+            Service::query()->updateOrCreate(['title' => $s['title']], [
+                'number' => $s['n'], 'description' => $s['desc'],
                 'status' => $s['title'] === 'Codebase rescue' ? 'featured' : 'published',
                 'sort_order' => $i + 1,
             ]);
         }
 
         foreach ($site['process'] as $i => $p) {
-            ProcessStep::query()->create(['number' => $p['n'], 'title' => $p['t'], 'description' => $p['d'], 'sort_order' => $i + 1]);
+            ProcessStep::query()->updateOrCreate(['number' => $p['n']], ['title' => $p['t'], 'description' => $p['d'], 'sort_order' => $i + 1]);
         }
 
         foreach ($site['stack'] as $i => $g) {
-            StackGroup::query()->create(['label' => $g['label'], 'items' => $g['items'], 'sort_order' => $i + 1]);
+            StackGroup::query()->updateOrCreate(['label' => $g['label']], ['items' => $g['items'], 'sort_order' => $i + 1]);
         }
 
         foreach ($site['roles'] as $i => $r) {
-            Experience::query()->create([
-                'years' => $r['years'], 'role' => $r['role'], 'org' => $r['org'], 'place' => $r['place'],
+            Experience::query()->updateOrCreate(['org' => $r['org'], 'role' => $r['role']], [
+                'years' => $r['years'], 'place' => $r['place'],
                 'description' => $r['desc'], 'status' => 'published', 'sort_order' => $i + 1,
             ]);
         }
